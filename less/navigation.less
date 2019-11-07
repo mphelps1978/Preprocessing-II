@@ -1,19 +1,34 @@
 // Navigation Styles here
 
 header {
-	.flex(space-between, center);
+	.flex(space-evenly, center);
 	border-bottom: 2px dashed @navigation-border;
+	margin: 0 auto;
+	width: 60%;
 	h1 {
 		font-size: 5rem;
 	} // Close h1
 
+
+	 // close header image
 	nav {
+		width: 60%;
+		text-align: right;
 		a {
 			text-decoration: none;
 			font-family: @main-font-stack;
-      font-size: 2em;
-      color: inherit;
-      padding: 0 2%;
+			font-size: 2em;
+			color: inherit;
+			padding: 0 2%;
 		} //close anchor tags
 	} // close nav
 } // Close Header
+
+	.head-image {
+width: 50%;
+margin: 0 auto;
+}
+.hero{
+border-bottom: 2px dashed @navigation-border;
+}
+
