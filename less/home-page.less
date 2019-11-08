@@ -4,6 +4,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		@media @500 {
+			flex-direction: column;
+			justify-content: center;
+		} //close media
 
 		.text-content {
 			width: 48%;
@@ -42,7 +46,6 @@
 		img {
 			border-radius: 10px;
 		}
-
 	}
 
 	.content-pick {
@@ -52,12 +55,11 @@
 		justify-content: space-between;
 
 		.destination {
-
 			width: 30%;
-      margin-bottom: 30px;
-      .btn{
-.button(@button-bg2, @white, 90%)
-    }
+			margin-bottom: 30px;
+			.btn {
+				.button(@button-bg2, @white, 90%);
+			}
 		}
 	}
 } // home
