@@ -1,61 +1,90 @@
 .home {
+	.content-section {
+		margin: 30px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@media @500 {
+			flex-direction: column;
+			justify-content: center;
+		} //close media
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+		.text-content {
+			width: 48%;
+			padding-right: 1%;
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
+			@media @500 {
+				width: 100%;
+			} // close media
+		}
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
+		.img-content {
+			width: 48%;
+			padding-left: 1%;
+			@media @500 {
+				width: 100%;
+				padding-bottom: 5%;
+			} // close media
 
-      img {
-        border-radius: 10px;
-      }
-    }
-  }
+			img {
+				border-radius: 10px;
+			}
+		}
+	}
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+	.inverse-content {
+		padding-bottom: 30px;
+		border-bottom: 2px dashed @navigation-border;
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
+		.text-content {
+			padding-left: 1%;
+			padding-right: 0;
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
+			@media @500 {
+				order: 1;
+			}
+		}
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+		.img-content {
+			padding-right: 1%;
+			padding-left: 0;
+			@media @500 {
+				order: 2;
+			}
+		}
+	}
 
-    img {
-      border-radius: 10px;
-    }
-  }
+	.content-destination {
+		width: 75%;
+		margin: 0 auto 30px;
+		@media @500 {
+			width: 100%;
+		} // close media
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+		img {
+			border-radius: 10px;
+		}
+	}
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-    }
-  }
-}// home
+	.content-pick {
+		padding-top: 30px;
+		border-top: 2px dashed @navigation-border;
+		display: flex;
+		justify-content: space-between;
+
+		@media @500 {
+			flex-direction: column;
+		} // close media
+
+		.destination {
+			width: 30%;
+			margin-bottom: 30px;
+			@media @500 {
+				width: 100%;
+			} // close media
+			.btn {
+				.button(@button-bg2, @white, 90%);
+			}
+		}
+	}
+} // home
